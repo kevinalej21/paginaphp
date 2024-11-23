@@ -277,7 +277,7 @@
     <footer>
         <div class="container">
             <p>&copy; <?php echo date("Y"); ?> Mi Sitio Web. Todos los derechos reservados.</p>
-            <p>Contacto: <a href="mailto:info@misitio.com">info@misitio.com</a> | Teléfono: (123) 456-7890</p>
+            <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
             <p>Síguenos en: 
                 <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
                 <a href="#" aria-label="Twitter">Twitter</a> | 
