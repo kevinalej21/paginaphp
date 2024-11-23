@@ -78,38 +78,60 @@
         }
 
         /* Banner actualizado */
-        .banner {
-            background-image: url('imagenes/aaaa.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        
-        .banner::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.3);
-            z-index: 1;
-        }
-        
-        .banner h1 {
-            font-size: 3em;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            position: relative;
-            z-index: 2;
-        }
+       
+  .banner {
+    background-image: url('imagenes/aaaa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
 
+  .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+
+  .banner h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 200px; /* Reduce height for smaller screens */
+    }
+
+    .banner h1 {
+      font-size: 2em; /* Reduce font size for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .banner {
+      height: 150px; /* Further reduce height for mobile screens */
+    }
+
+    .banner h1 {
+      font-size: 1.5em; /* Further reduce font size for mobile screens */
+    }
+  }
+`
         /* Navegación actualizada */
         nav {
             background-color: var(--nav-bg);
