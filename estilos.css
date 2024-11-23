@@ -209,3 +209,42 @@ footer a {
 
 /* falta estilo para el boton del menu */
 
+/* Estilos para el botón del menú */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5em;
+    color: var(--nav-text);
+    background-color: var(--nav-bg);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  /* Estilos específicos para el modo claro */
+  :root[data-theme="light"] .menu-icon {
+    color: var(--nav-bg);
+    background-color: var(--nav-text);
+  }
+
+  /* Estilos para el hover del botón del menú */
+  .menu-icon:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+  }
+
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+
+    nav ul {
+      display: none;
+    }
+
+    nav ul.show {
+      display: flex;
+    }
+  }
