@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLATAFORMAS TECNOLOGICAS</title>
     <link rel="stylesheet" href="estilos.css">
-
 </head>
 <body>
     <!-- Botón de cambio de tema -->
