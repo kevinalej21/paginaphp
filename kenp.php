@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLATAFORMAS</title>
+    <title>PLATAFORMAS TECNOLOGICAS</title>
     <!DOCTYPE html>
 <html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLATAFORMAS</title>
+    <title>PLATAFORMAS TECNOLOGICAS</title>
     <style>
         /* Variables para los temas */
         :root[data-theme="light"] {
