@@ -109,12 +109,12 @@
             if (html.getAttribute('data-theme') === 'light') {
                 html.setAttribute('data-theme', 'dark');
                 themeIcon.textContent = '☀';
-                themeText.textContent = 'Modo Claro';
+                themeText.textContent = '';
                 localStorage.setItem('theme', 'dark');
             } else {
                 html.setAttribute('data-theme', 'light');
                 themeIcon.textContent = '🌙';
-                themeText.textContent = 'Modo Oscuro';
+                themeText.textContent = '';
                 localStorage.setItem('theme', 'light');
             }
         }
@@ -128,7 +128,7 @@
             document.documentElement.setAttribute('data-theme', savedTheme);
             if (savedTheme === 'dark') {
                 themeIcon.textContent = '☀';
-                themeText.textContent = 'Modo Claro';
+                themeText.textContent = '';
             }
         });
 
