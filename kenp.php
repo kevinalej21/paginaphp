@@ -77,8 +77,14 @@
     <main>
         <div class="container">
             <section id="inicio">
-                <h2>Bienvenido a nuestra página de inicio</h2>
-                <p>Esta es la página principal de nuestro sitio web sobre Sistemas Operativos.</p>
+                <h2>Bienvenido a KENP</h2>
+                <p>En KENP  podrás encontrar información sobre las bases tecnológicas que soportan el desarrollo
+                    y ejecución de aplicaciones y servicios, como sistemas operativos, arquitecturas de almacenamiento,
+                    y temas avanzados relacionados con la gestión de recursos y optimización de procesos.
+                </p>   
+                    <img src="imagenes/introduccion-sistemas-operativos.jpg" alt="SO">
+                
+
             </section>
             <section id="contacto">
                 <h2>Contacto</h2>

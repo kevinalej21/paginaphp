@@ -39,6 +39,9 @@ body {
     transition: all 0.3s ease;
 }
 
+
+
+
 /* Botón de cambio de tema */
 .theme-toggle {
     position: fixed;
@@ -63,6 +66,17 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta este valor según necesites */
+}
+.image-container img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Banner actualizado */

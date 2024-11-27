@@ -1,5 +1,6 @@
 <?php
 // template.php - Esta será tu plantilla base
+
 $pageTitles = [
     'sistemas_operativos' => 'Sistemas Operativos',
     'gestion_procesos' => 'Gestión de Procesos',
@@ -121,6 +122,7 @@ $pageTitle = isset($pageTitles[$currentPage]) ? $pageTitles[$currentPage] : 'Pá
     </style>
 </head>
 <body>
+    
     <!-- Botón para volver a la página principal -->
     <div class="container">
         <a href="kenp.php" class="back-button">← Volver al Inicio</a>
