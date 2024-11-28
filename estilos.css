@@ -66,17 +66,14 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    text-align: justify;
     
 }
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Ajusta este valor según necesites */
-}
-.image-container img {
-    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+.container.footer{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
 }
 
 /* Banner actualizado */
@@ -189,6 +186,7 @@ h2 {
     color: var(--text-color);
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 0.5em;
+    text-align: center;
 }
 
 /* Footer actualizado */
