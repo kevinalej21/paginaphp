@@ -91,7 +91,9 @@
             </section>
             <section id="contacto">
                 <h2>Quienes somos</h2>
-                <p>Póngase en contacto con nosotros para más información.</p>
+                <p>Somos un grupo de estudiantes de ingeneria de sistemas queriendo explotar nuestras capacidades en progranmacion
+                    cualquier chamba avisas 
+                </p>
             </section>
         </div>
     </main>
