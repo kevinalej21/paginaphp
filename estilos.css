@@ -66,7 +66,8 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-    text-align: justify;
+    text-align: justify ;
+    position: relative ;
     
 }
 .container.footer{
@@ -74,7 +75,9 @@ body {
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
+    position: relative ;
 }
+
 
 /* Banner actualizado */
 
@@ -260,3 +263,4 @@ footer a {
       display: flex;
     }
   }
+

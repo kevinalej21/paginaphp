@@ -77,14 +77,14 @@
     <main>
         <div class="container">
             <section id="inicio">
-                <h2 style>Bienvenido a KENP</h2>
+                <h2>Bienvenido a KENP</h2>
                 <p>En KENP  podrás encontrar información sobre las bases tecnológicas que soportan el desarrollo
                     y ejecución de aplicaciones y servicios, como sistemas operativos, arquitecturas de almacenamiento,
                     y temas avanzados relacionados con la gestión de recursos y optimización de procesos.
                 </p>  
-                   <div style="text-align: center;">
-                      <img src="imagenes/introduccion-sistemas-operativos.jpg" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 60%; height: auto;">
-                   </div> 
+                <div style="text-align: center;">
+                    <img src="imagenes/introduccion-sistemas-operativos.jpg" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 60%; height: auto;">
+                </div> 
                     
                 
 
@@ -92,7 +92,7 @@
             <section id="contacto">
                 <h2>Quienes somos</h2>
                 <p>Somos un grupo de estudiantes de ingeneria de sistemas queriendo explotar nuestras capacidades en progranmacion
-                    cualquier chamba avisas 
+                cualquier chamba avisan
                 </p>
             </section>
         </div>
