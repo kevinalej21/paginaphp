@@ -103,13 +103,7 @@
             <section id="contacto">
                 <h2>H</h2>
                 <p>Funciones Principales
-a. Gestión de Procesos
-Proceso: Programa en ejecución, compuesto por código ejecutable y contexto.
-Funciones:
-Creación, ejecución y terminación de procesos.
-Planificación (scheduling): Decide qué proceso se ejecuta y cuándo.
-Sincronización: Manejo de procesos concurrentes para evitar conflictos.
-Comunicación entre procesos (IPC): Intercambio de datos entre procesos.
+        
                 </p>
             </section>
         </div>
