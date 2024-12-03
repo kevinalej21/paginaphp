@@ -91,6 +91,9 @@
                         desde procesos pesados a ligeros en sistemas modernos como Linux, Windows y macOS.
                     </li>
                 </ul>
+                <div style="text-align: right;">
+                <img src="imagenes/codigo-binario.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
+                </div>
             </section>
             
             <section id="modelos-hilos">
@@ -105,6 +108,9 @@
                     <li><strong>Modelo mixto:</strong> Combina hilos de usuario mapeados a menos hilos de kernel. Ofrece balance entre eficiencia y paralelismo.
                     </li>
                 </ul>
+                <div style="text-align: right;">
+                <img src="imagenes/procesador.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
+                </div>
             </section>
 
             <section id="creacion-hilos">
@@ -120,6 +126,9 @@
                     <li><strong>Ciclo de vida:</strong> Creación → Ejecución → Suspensión → Terminación.</li>
                     <li><strong>Sincronización:</strong> Uso de mutex, semáforos y barreras para evitar conflictos entre hilos.</li>
                 </ul>
+                <div style="text-align: right;">
+                <img src="imagenes/sincronizacion-de-datos.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
+                </div>
             </section>
 
             <section id="problemas-hilos">
@@ -129,6 +138,9 @@
                     <li><strong>Deadlocks:</strong> Prevención: Jerarquía de recursos, tiempo de espera limitado.</li>
                     <li><strong>Starvation:</strong> Solución: Mecanismos de prioridad o envejecimiento.</li>
                 </ul>
+                <div style="text-align: right;">
+                <img src="imagenes/semaforo.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
+                </div>
             </section>
 
             <section id="casos-estudio">
@@ -142,6 +154,9 @@
                         </ul>
                     </li>
                 </ul>
+                <div style="text-align: right;">
+                <img src="imagenes/codificacion.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
+                </div>
             </section>
         </div>
     </main>
@@ -154,7 +169,6 @@
             <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
             <p>Síguenos en: 
                 <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
-                <a href="#" aria-label="Twitter">Twitter</a> | 
                 <a href="https://www.instagram.com/kevincruz.21/" aria-label="Instagram">Instagram</a>
             </p>
         </div>

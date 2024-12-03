@@ -201,7 +201,6 @@
             <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
             <p>Síguenos en: 
                 <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
-                <a href="#" aria-label="Twitter">Twitter</a> | 
                 <a href="https://www.instagram.com/kevincruz.21/" aria-label="Instagram">Instagram</a>
             </p>
         </div>
