@@ -45,7 +45,6 @@
                 ['name' => 'Tópicos Avanzados en Sistemas Operativos', 'href' => 'topicos_avanzados.php'],
             ],
         ],
-        ['name' => 'Contacto', 'href' => '#contacto'],
     ];
     ?>
     
@@ -89,7 +88,7 @@
                     Los discos son agrupados en configuraciones lógicas que actúan como una única unidad de almacenamiento, mejorando características como la velocidad de acceso 
                     o la protección de datos.
                 </p>
-                </ul>
+
                 <div style="text-align: right;">
                 <img src="imagenes/almacenamiento-de-datos.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
                 </div>

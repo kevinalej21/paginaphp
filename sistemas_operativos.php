@@ -45,7 +45,6 @@
                 ['name' => 'Tópicos Avanzados en Sistemas Operativos', 'href' => 'topicos_avanzados.php'],
             ],
         ],
-        ['name' => 'Contacto', 'href' => '#contacto'],
     ];
     ?>
     
