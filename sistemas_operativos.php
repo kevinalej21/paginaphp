@@ -11,8 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLATAFORMAS TECNOLOGICAS</title>
     <link rel="stylesheet" href="estilos.css">
+    
+    
 </head>
 <body>
+
     <!-- Botón de cambio de tema -->
     <button class="theme-toggle" onclick="toggleTheme()">
         <span id="theme-icon">🌙</span> 
@@ -204,7 +207,53 @@
                 directorios, permisos y el acceso a los datos, asegurando que la información esté organizada de manera eficiente y sea fácilmente 
                 accesible cuando sea necesario.
                 </p>
-                </ul>  
+                <div style= "text-align: center;" >
+                    <img src="imagenes/Tipos-de-sistema-de-archivos-de-Linux-780x470.png" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 30%; height: auto;">
+                </div> 
+               
+                <li><h3><strong>Drivers de Dispositivo</strong></h3></li>
+                <p>
+                Los drivers de dispositivo son programas que permiten que el sistema operativo se comunique y controle el hardware de un computador, 
+                como impresoras, tarjetas gráficas, discos duros, entre otros. Actúan como intermediarios entre el sistema operativo y los dispositivos, 
+                traduciendo las instrucciones del sistema operativo en comandos que el hardware puede entender y viceversa. Sin los drivers, el sistema 
+                operativo no podría interactuar correctamente con los dispositivos conectados. 
+                </p> 
+                <div style= "text-align: center;" >
+                    <img src="imagenes/drivers.jpg" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 50%; height: auto;">
+                </div> 
+            </ul>  
+            </section>
+            <section>
+                <h2>Ejemplos de Sistemas Operativos</h2>
+                <p>
+                    <ul>
+                        <br><li><strong>Windows:</strong> Es uno de los sistemas operativos más populares y está diseñado para ofrecer una experiencia amigable al usuario, 
+                            con un enfoque en aplicaciones comerciales y de productividad. Es ampliamente utilizado en computadoras personales, 
+                            portátiles y estaciones de trabajo.
+                        </li>
+                        <br><li>
+                        <strong>Linux:</strong>Este sistema operativo de código abierto es conocido por su alta personalización y flexibilidad. Es utilizado 
+                        principalmente en servidores y entornos empresariales debido a su estabilidad y seguridad. Existen diversas distribuciones
+                        de Linux, como Ubuntu, CentOS y Debian.
+                        </li>
+                        <br><li>
+                        <strong>macOS:</strong> Desarrollado por Apple, macOS está diseñado específicamente para sus dispositivos, como MacBooks y iMacs. Combina un 
+                        alto rendimiento con una interfaz estética y fácil de usar, siendo muy popular entre los diseñadores gráficos, desarrolladores 
+                        y usuarios de productos Apple.
+                        </li>
+
+                        <br> <li>
+                        <strong>Android/iOS:</strong> Son sistemas operativos móviles, con Android siendo basado en Linux y utilizado por una amplia variedad de dispositivos
+                        móviles, mientras que iOS está desarrollado por Apple para sus iPhones y iPads. Ambos sistemas operativos están optimizados para 
+                        pantallas táctiles y ofrecen tiendas de aplicaciones, pero tienen enfoques distintos en cuanto a personalización y control de los 
+                        dispositivos.
+                        </li>
+                    </ul>
+                </p>
+                <div style= "text-align: center;" >
+                    <img src="imagenes/TIPOS DE SO.png" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 40%; height: auto;">
+                </div>
+                
             </section>
             
         </div>
@@ -285,6 +334,37 @@
                 });
             });
         });
+        
+
+    
     </script>
+
+
+<button id="scrollToTopBtn" aria-label="Volver arriba">
+        <img src="imagenes/subir.png " alt=""style="">
+    </button>
+
+<script>
+        // Obtener el botón
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Cuando el usuario se desplaza 20px desde la parte superior del documento, mostrar el botón
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // Cuando el usuario hace clic en el botón, desplazarse hasta la parte superior del documento
+        scrollToTopBtn.onclick = function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+    
 </body>
 </html>

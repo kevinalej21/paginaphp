@@ -264,3 +264,51 @@ footer a {
     }
   }
 
+ /* boton de subir */
+      
+  #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 50;
+        background: #333;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        transition: .3s;
+        width: 50px;
+        height: 50px;
+    }
+
+    #scrollToTopBtn:hover {
+        background: #555;
+    }
+
+    #scrollToTopBtn img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Estilos responsivos */
+    @media screen and (max-width: 768px) {
+        #scrollToTopBtn {
+            bottom: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #scrollToTopBtn {
+            bottom: 10px;
+            right: 10px;
+            width: 35px;
+            height: 35px;
+            padding: 6px;
+        }
+    }
