@@ -42,7 +42,7 @@
                 ['name' => 'Tópicos Avanzados en Sistemas Operativos', 'href' => 'topicos_avanzados.php'],
             ],
         ],
-        ['name' => 'Contacto', 'href' => '#contacto'],
+
     ];
     ?>
     <header>
@@ -104,7 +104,6 @@
             <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
             <p>Síguenos en: 
                 <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
-                <a href="#" aria-label="Twitter">Twitter</a> | 
                 <a href="https://www.instagram.com/kevincruz.21/" aria-label="Instagram">Instagram</a>
             </p>
         </div>
@@ -170,31 +169,6 @@
                 });
             });
         });
-    </script>
-    <button id="scrollToTopBtn" aria-label="Volver arriba">
-        <img src="imagenes/subir.png " alt=""style="">
-    </button>
-
-<script>
-        // Obtener el botón
-        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-        // Cuando el usuario se desplaza 20px desde la parte superior del documento, mostrar el botón
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
-            }
-        }
-
-        // Cuando el usuario hace clic en el botón, desplazarse hasta la parte superior del documento
-        scrollToTopBtn.onclick = function() {
-            document.body.scrollTop = 0; // Para Safari
-            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
-        }
     </script>
 </body>
 </html>

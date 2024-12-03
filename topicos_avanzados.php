@@ -124,6 +124,13 @@
                 <img src="imagenes/clusteres.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
                 </div>
             </section>
+            <section id="comparacion">
+                <h2>Comparación: Sistemas Clustered vs. Sistemas Distribuidos</h2>
+
+                <div style="text-align: center;">
+                    <img src="imagenes/vs.png" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 60%; height: auto;">
+                </div>
+            </section>
         </div>
     </main>
 
@@ -135,7 +142,6 @@
             <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
             <p>Síguenos en: 
                 <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
-                <a href="#" aria-label="Twitter">Twitter</a> | 
                 <a href="https://www.instagram.com/kevincruz.21/" aria-label="Instagram">Instagram</a>
             </p>
         </div>
@@ -232,6 +238,5 @@
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
         }
     </script>
-    
 </body>
 </html>

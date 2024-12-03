@@ -45,7 +45,6 @@
                 ['name' => 'Tópicos Avanzados en Sistemas Operativos', 'href' => 'topicos_avanzados.php'],
             ],
         ],
-        ['name' => 'Contacto', 'href' => '#contacto'],
     ];
     ?>
     
@@ -89,7 +88,7 @@
                     Los discos son agrupados en configuraciones lógicas que actúan como una única unidad de almacenamiento, mejorando características como la velocidad de acceso 
                     o la protección de datos.
                 </p>
-                </ul>
+
                 <div style="text-align: right;">
                 <img src="imagenes/almacenamiento-de-datos.png" alt="datos" style="box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.8);border-radius: 10px; max-width: 10%; height: auto;">
                 </div>
@@ -202,7 +201,6 @@
             <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
             <p>Síguenos en: 
                 <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
-                <a href="#" aria-label="Twitter">Twitter</a> | 
                 <a href="https://www.instagram.com/kevincruz.21/" aria-label="Instagram">Instagram</a>
             </p>
         </div>
