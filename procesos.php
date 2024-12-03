@@ -1,162 +1,225 @@
-<?php
-// template.php - Esta será tu plantilla base
-$pageTitles = [
-    'sistemas_operativos' => 'Sistemas Operativos',
-    'gestion_procesos' => 'Gestión de Procesos',
-    'planificacion_sincronizacion' => 'Planificación y Sincronización',
-    'procesos' => 'Procesos en Sistemas Operativos',
-    'hilos' => 'Hilos',
-    'gestion_memoria' => 'Gestión de Memoria',
-    'sistemas_raid' => 'Sistemas RAID',
-    'topicos_avanzados' => 'Tópicos Avanzados'
-];
-
-// Obtener el nombre del archivo actual
-$currentPage = basename($_SERVER['PHP_SELF'], '.php');
-$pageTitle = isset($pageTitles[$currentPage]) ? $pageTitles[$currentPage] : 'Página no encontrada';
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle; ?> - Mi Sitio Web</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Estilos del banner */
-        .page-header {
-            background-color: #333;
-            color: white;
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-        }
-
-        .page-header h1 {
-            margin: 0;
-            text-align: center;
-            color: #ffd700;
-        }
-
-        /* Estilos del contenido */
-        .content-section {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-        }
-
-        .content-section h2 {
-            color: #333;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 0.5em;
-            margin-top: 0;
-        }
-
-        /* Estilos para imágenes */
-        .content-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1rem auto;
-        }
-
-        /* Estilos para la navegación */
-        .nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin: 2rem 0;
-        }
-
-        .nav-button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .nav-button:hover {
-            background-color: #555;
-        }
-
-        /* Estilos para el botón de volver */
-        .back-button {
-            display: inline-block;
-            background-color: #ffd700;
-            color: #333;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-bottom: 2rem;
-            transition: background-color 0.3s;
-        }
-
-        .back-button:hover {
-            background-color: #ffed4a;
-        }
-
-        /* Estilos responsive */
-        @media screen and (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-        }
-    </style>
+    <title>PLATAFORMAS TECNOLOGICAS</title>
+    <!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATAFORMAS TECNOLOGICAS</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Botón para volver a la página principal -->
-    <div class="container">
-        <a href="kenp.php" class="back-button">← Volver al Inicio</a>
-    </div>
+    <!-- Botón de cambio de tema -->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span> 
+        <span id="theme-text">Modo Oscuro</span>
+    </button>
 
-    <!-- Encabezado de la página -->
-    <header class="page-header">
-        <div class="container">
-            <h1><?php echo $pageTitle; ?></h1>
+    <?php
+    $menuItems = [
+        ['name' => 'Inicio', 'href' => '#inicio'],
+        [
+            'name' => 'Primer Corte',
+            'href' => '#',  // Cambiado a # para que solo despliegue el menú
+            'submenu' => [
+                ['name' => 'Sistemas Operativos', 'href' => 'sistemas_operativos.php'],
+                ['name' => 'Gestión de Procesos', 'href' => 'gestion_procesos.php'],
+                ['name' => 'Planificación y Sincronización', 'href' => 'planificacion_sincronizacion.php'],
+                ['name' => 'Procesos en Sistemas Operativos', 'href' => 'procesos.php'],
+                ['name' => 'Hilos', 'href' => 'hilos.php'],
+            ],
+        ],
+        [
+            'name' => 'Segundo Corte',
+            'href' => '#',  // Cambiado a # para que solo despliegue el menú
+            'submenu' => [
+                ['name' => 'Gestión de Memoria', 'href' => 'gestion_memoria.php'],
+                ['name' => 'Sistemas RAID', 'href' => 'sistemas_raid.php'],
+                ['name' => 'Tópicos Avanzados en Sistemas Operativos', 'href' => 'topicos_avanzados.php'],
+            ],
+        ],
+
+    ];
+    ?>
+    <header>
+        <div class="banner">
+            <h1></h1>
         </div>
+        <nav>
+            <div class="container">
+                <div class="menu-icon" onclick="toggleMenu()" aria-label="Abrir menú">&#9776;</div>
+                <ul id="menu">
+                    <?php foreach ($menuItems as $item): ?>
+                        <li>
+                            <a href="<?php echo $item['href']; ?>" <?php echo isset($item['submenu']) ? 'class="has-submenu"' : ''; ?>>
+                                <?php echo $item['name']; ?>
+                            </a>
+                            <?php if (isset($item['submenu'])): ?>
+                                <div class="submenu">
+                                    <?php foreach ($item['submenu'] as $subItem): ?>
+                                        <a href="<?php echo $subItem['href']; ?>" class="submenu-link">
+                                            <?php echo $subItem['name']; ?>
+                                        </a>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="container">
-        <article class="content-section">
-            <h2>Introducción</h2>
-            <!-- Aquí va el contenido específico de cada página -->
-            <?php
-            switch($currentPage) {
-                case 'sistemas_operativos':
-                    include 'contenido/sistemas_operativos_content.php';
-                    break;
-                case 'gestion_procesos':
-                    include 'contenido/gestion_procesos_content.php';
-                    break;
-                // ... agregar casos para cada página
-                default:
-                    echo "<p>Contenido en construcción...</p>";
-            }
-            ?>
-        </article>
-    </main>
+    <main>
+        <div class="container">
+            <section id="inicio">
+                <h2>Procesos en Sistemas Operativos</h2>
+                <H3><strong>¿Qué es un proceso?</strong></H3>
+                <p>
+                Un proceso es un programa en ejecución dentro del sistema operativo. Se considera la unidad básica de trabajo y está compuesto por:
+                <ul>
+                <li><strong>Código ejecutable:</strong></li> Las instrucciones que el proceso va a ejecutar.
+                <li><strong>Contexto de ejecución:</strong></li> Incluye el contador de programa, registros de la CPU y variables.
+                <li><strong>Recursos asignados:</strong></li> Memoria, archivos y dispositivos necesarios para ejecutar el proceso.
+                <br>
+                Un proceso es gestionado por el sistema operativo para asegurar su correcta ejecución y la asignación adecuada de recursos. 
+                </ul>
+                </p>  
+                <div style="text-align: center;">
+                    <img src="imagenes/procesos1.png" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 20%; height: auto;">
+                </div> 
+            </section>
 
-    <!-- Pie de página -->
-    <footer class="container">
-        <p>&copy; <?php echo date("Y"); ?> Mi Sitio Web. Todos los derechos reservados.</p>
+            <section id="contacto">
+                <h2>Ciclo de Vida de un Proceso</h2>
+                <p> El ciclo de vida de un proceso describe las etapas que atraviesa durante su ejecución, desde su creación hasta su finalización. Estas etapas son:
+                    <ul>
+                        <li><strong>Nuevo:</strong>El proceso está siendo creado.</li>
+                        <br>
+                        <li><strong>Listo:</strong>El proceso está esperando la asignación de la CPU para comenzar su ejecución.</li>
+                        <br>
+                        <li><strong>Ejecución:</strong>El proceso está utilizando la CPU para ejecutar sus instrucciones.</li>
+                        <br>
+                        <li><strong>Espera:</strong>El proceso está esperando un evento externo, como una operación de entrada/salida (E/S).</li>
+                        <br>
+                        <li><strong>Terminado:</strong>El proceso ha completado su tarea y sus recursos son liberados.</li>
+                    </ul>
+
+                </p>
+                <div style="text-align: center;">
+                    <img src="imagenes/ciclo de vida de un proceso.png" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 40%; height: auto;">
+                </div> 
+            </section>
+
+            <section>
+                <h2>Estados de un Proceso</h2>
+                <p>El sistema operativo clasifica los procesos en diferentes estados según su situación:</p>
+                <ul>
+                    <li><strong>Nuevo:</strong>El proceso está siendo creado.</li>
+                    <br>
+                    <li><strong>Listo:</strong>El proceso está esperando que la CPU le sea asignada.</li>
+                    <br>
+                    <li><strong>Ejecución:</strong>El proceso está en ejecución en la CPU.</li>
+                    <br>
+                    <li><strong>Espera:</strong>El proceso espera un evento, como una operación de E/S.</li>
+                    <br>
+                    <li><strong>Terminado:</strong>El proceso ha finalizado y se liberan los recursos.</li>
+                </ul>
+                <div style="text-align: center;">
+                    <img src="imagenes/estado de un proceso.png" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 40%; height: auto;">
+                </div> 
+            </section>
+            <section>
+                <h2>Creación y Terminación de Procesos</h2>
+                <p>La creación de un proceso se lleva a cabo mediante llamadas al sistema, como fork() en Unix o CreateProcess() en Windows. 
+                    Un proceso puede terminar de dos maneras:
+                </p>
+                <ul>
+                    <li><strong>Voluntariamente:</strong>El proceso finaliza por su propia decisión, generalmente al ejecutar una llamada como exit().</li>
+                    <li><strong>Involuntariamente:</strong>Otro proceso o el sistema operativo termina un proceso, por ejemplo, mediante señales o excepciones.</li>
+                </ul>
+                <div style="text-align: center;">
+                    <img src="imagenes/terminacion e procesos.jpg" alt="SO" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 40%; height: auto;">
+                </div> 
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container.footer">
+            <p>&copy; <?php echo date("Y"); ?> Mi Sitio Web. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:info@misitio.com">kevi.kc7@gmail.com</a> | Teléfono: (315) 633-5331</p>
+            <p>Síguenos en: 
+                <a href="https://www.facebook.com/pedro.nieto.562" aria-label="Facebook">Facebook</a> | 
+                <a href="https://www.instagram.com/kevincruz.21/" aria-label="Instagram">Instagram</a>
+            </p>
+        </div>
     </footer>
+
+    <script>
+        // Función para cambiar el tema
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+            
+            if (html.getAttribute('data-theme') === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀';
+                themeText.textContent = '';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = '';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Cargar el tema guardado
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+            
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            if (savedTheme === 'dark') {
+                themeIcon.textContent = '☀';
+                themeText.textContent = '';
+            }
+        });
+
+        // Tu código JavaScript existente para el menú
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuItems = document.querySelectorAll('#menu > li');
+            
+            menuItems.forEach(function(item) {
+                var mainLink = item.querySelector('a.has-submenu');
+                var submenuLinks = item.querySelectorAll('.submenu-link');
+                
+                if (mainLink) {
+                    mainLink.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        item.classList.toggle('active');
+                    });
+                }
+
+                submenuLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        window.location.href = this.href;
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
