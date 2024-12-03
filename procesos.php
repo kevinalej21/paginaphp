@@ -21,7 +21,7 @@
 
     <?php
     $menuItems = [
-        ['name' => 'Inicio', 'href' => '#inicio'],
+        ['name' => 'Inicio', 'href' => 'kenp.php'],
         [
             'name' => 'Primer Corte',
             'href' => '#',  // Cambiado a # para que solo despliegue el menú
@@ -220,6 +220,31 @@
                 });
             });
         });
+    </script>
+    <button id="scrollToTopBtn" aria-label="Volver arriba">
+        <img src="imagenes/subir.png " alt=""style="">
+    </button>
+
+<script>
+        // Obtener el botón
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Cuando el usuario se desplaza 20px desde la parte superior del documento, mostrar el botón
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // Cuando el usuario hace clic en el botón, desplazarse hasta la parte superior del documento
+        scrollToTopBtn.onclick = function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
     </script>
 </body>
 </html>

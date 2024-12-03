@@ -21,7 +21,7 @@
 
     <?php
     $menuItems = [
-        ['name' => 'Inicio', 'href' => '#inicio'],
+        ['name' => 'Inicio', 'href' => 'kenp.php'],
         [
             'name' => 'Primer Corte',
             'href' => '#',  // Cambiado a # para que solo despliegue el menú
@@ -76,7 +76,7 @@
     <main>
         <div class="container">
             <section id="inicio" style="text-align: left;">
-                <h2>Gestion de procesos</h2>
+                <h2>Gestión de procesos</h2>
                 <p>La gestión de procesos es una función fundamental de los sistemas operativos que se encarga de crear, planificar, ejecutar, sincronizar y 
                 finalizar los procesos en un sistema. Un proceso es una instancia de un programa en ejecución que requiere recursos como CPU, 
                 memoria y dispositivos de E/S.

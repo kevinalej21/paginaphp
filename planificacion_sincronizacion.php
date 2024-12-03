@@ -21,7 +21,7 @@
 
     <?php
     $menuItems = [
-        ['name' => 'Inicio', 'href' => '#inicio'],
+        ['name' => 'Inicio', 'href' => 'kenp.php'],
         [
             'name' => 'Primer Corte',
             'href' => '#',  // Cambiado a # para que solo despliegue el menú
