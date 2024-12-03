@@ -81,9 +81,9 @@
 <main>
         <div class="container">
             <section id="concepto">
-                <h2>Concepto General</h2>
+                <h2>Gestion de Memoria</h2>
                 <p>
-                    La gestión de memoria es el proceso mediante el cual se administra y organiza la memoria disponible 
+                    Como concepto general, la gestión de memoria es el proceso mediante el cual se administra y organiza la memoria disponible 
                     en un sistema para garantizar su uso eficiente y evitar problemas como fugas o fragmentación.
                 </p>
                 <div style= "text-align: center;" >
