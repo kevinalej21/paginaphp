@@ -80,32 +80,133 @@
 
     <main>
         <div class="container">
-            <section id="inicio">
+            <section id="Sistemas operativos">
                 <h2>Sistemas Operativos</h2>
-                <p> Un sistema operativo (SO) es un software que actúa como intermediario entre el
-                    <br> hardware de una computadora y sus usuarios,proporcionando servicios 
-                    <br>esenciales para ejecutar aplicaciones y gestionar los recursos del sistema. 
-                    <br>Definición: Es el programa base que administra el hardware y coordina el software.
-                        <p> Objetivos:
-                        <br>Eficiencia: Uso óptimo de los recursos del sistema.
-                        <br>Conveniencia: Facilitar la interacción del usuario con el hardware.
-                        <br>Capacidad de evolución: Adaptarse a nuevas tecnologías y requisitos.</p>
-                        </p>  
+                <p>Un sistema operativo (SO) es un software que actúa como intermediario entre el hardware de una
+                computadora y sus usuarios, proporcionando servicios esenciales para ejecutar aplicaciones y
+                gestionar los recursos del sistema. A continuación, se presenta un resumen estructurado por bloques
+                clave.
+                </p>
+                <p>
+                El sistema operativo es el programa base que administra el hardware y coordina el software. Sus principales
+                objetivos incluyen la eficiencia, que busca el uso óptimo de los recursos del sistema, la conveniencia,
+                que se refiere a facilitar la interacción del usuario con el hardware de manera sencilla y eficaz, y la capacidad de evolución,
+                que le permite adaptarse a nuevas tecnologías y requisitos, asegurando su relevancia y funcionalidad a lo largo del tiempo.
+                </p>
 
 
-                <div style= "margin: 0; height: 100vh; display: flex; justify-content: flex-end;  align-items: center; max-width: 100%; height: auto; " >
+                <div style= "text-align: center;" >
                     <img src="imagenes/definicion-sistemas-operativos.jpg" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 60%; height: auto;">
                 </div> 
                     
                 
 
             </section>
-            <section id="contacto">
-                <h2>H</h2>
-                <p>Funciones Principales
-        
+            <section id="Funciones principales">
+            <h2>Funciones Principales</h2>
+            <ul>
+                <li><h3><strong>Gestión de Procesos</strong></h3></li>
+                <p>Un proceso es un programa en ejecución compuesto por código ejecutable y su contexto. 
+                Dentro de la gestión de procesos, se incluyen funciones esenciales como la creación, 
+                ejecución y terminación de procesos. Además, se realiza la planificación (scheduling), 
+                que decide qué proceso se ejecuta y en qué momento, optimizando los recursos del sistema. 
+                También se gestiona la sincronización, que permite manejar procesos concurrentes y
+                evitar conflictos al acceder a recursos compartidos. Por último, se facilita la comunicación entre procesos 
+                (IPC), que permite el intercambio de datos entre procesos para garantizar la colaboración eficiente.</p>
+
+                <li><h3><strong>Gestión de Memoria</strong></h3></li>
+                <p>La memoria principal es el espacio donde se cargan los programas y los datos que están en
+                ejecución. La gestión de memoria incluye funciones clave como la asignación y liberación de
+                memoria para garantizar un uso eficiente de los recursos disponibles. También se implementan
+                técnicas como la segmentación y la paginación para organizar y gestionar la memoria de manera
+                estructurada. Además, se asegura la protección y el control de acceso, evitando conflictos y
+                garantizando que cada proceso acceda únicamente a las áreas de memoria permitidas.
                 </p>
+                
+                <li><h3><strong>Gestión de Archivos</strong></h3></li>
+                <p>El sistema de archivos es una estructura diseñada para organizar y almacenar datos en dispositivos
+                de almacenamiento. La gestión de archivos incluye funciones esenciales como la creación,
+                eliminación y manipulación de archivos y directorios, lo que permite mantener el orden y
+                accesibilidad de la información. Además, se realiza el control de permisos y acceso para garantizar la
+                seguridad de los datos, y se implementa un almacenamiento estructurado que facilita la
+                recuperación eficiente de la información.
+                </p>
+
+                <li><h3><strong>Gestión de Dispositivos</strong></h3></li>
+                <p>Los dispositivos periféricos, como discos duros, impresoras y otros, son componentes esenciales
+                para la interacción con el sistema. La gestión de dispositivos se encarga de los controladores
+                (drivers), que facilitan la comunicación entre el hardware y el software. Además, se asegura una
+                entrada/salida (E/S) eficiente y en paralelo, optimizando el rendimiento del sistema. También se lleva
+                a cabo la asignación y manejo de dispositivos compartidos, asegurando que múltiples procesos
+                puedan utilizarlos de manera adecuada sin interferencias.
+                </p>
+
+                <li><h3><strong>Gestión de Seguridad y Protección</strong></h3></li>
+                <p>La seguridad se enfoca en prevenir accesos no autorizados a los recursos del sistema, mientras que
+                la protección garantiza que estos recursos solo sean utilizados bajo reglas establecidas para evitar su
+                mal uso. Para ello, se implementan mecanismos como la autenticación de usuarios, que asegura que
+                solo personas autorizadas puedan acceder al sistema, el control de acceso a recursos, que regula
+                quién puede acceder a qué y en qué condiciones, y las auditorías de eventos, que permiten
+                monitorear y registrar las actividades en el sistema para detectar posibles vulnerabilidades o abusos.
+                </p>
+            </ul>
+                
+                
             </section>
+
+            <section>
+                <h2>Tipos de Sistemas Operativos</h2>
+                <p>
+                Existen varios tipos de sistemas operativos, cada uno adaptado a necesidades específicas. Los sistemas monotarea
+                ejecutan una tarea a la vez, mientras que los multitarea pueden ejecutar múltiples tareas simultáneamente mediante
+                conmutación rápida entre procesos. En cuanto a los usuarios, los sistemas monousuario permiten solo un usuario a la vez, 
+                mientras que los multiusuario soportan varios usuarios de manera concurrente. Los sistemas por lotes procesan tareas
+                en lotes sin interacción directa del usuario. Los sistemas en tiempo real están diseñados para responder de manera 
+                garantizada a eventos externos, como en aplicaciones de control industrial. Finalmente, los sistemas distribuidos coordinan
+                múltiples computadoras para que trabajen juntas como un sistema único.
+                </p>
+                <br>
+                <div style= "text-align: center;" >
+                    <img src="imagenes/sistemas-operativos2.jpg" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 50%; height: auto;">
+                </div> 
+            </section>
+            <section>
+                <h2>Componentes del Sistema Operativo</h2>
+                <ul>
+                <li><h3><strong>Núcleo (Kernel)</strong></h3></li>
+                <p>
+                El núcleo o kernel es el componente central de un sistema operativo y se encarga de gestionar el hardware y coordinar 
+                las operaciones entre el hardware y el software. Sus principales funciones incluyen la gestión de recursos, como la CPU,
+                la memoria y los dispositivos de entrada/salida, asegurando que se utilicen de manera eficiente. Además, se encarga de la 
+                comunicación entre hardware y software, actuando como intermediario entre ambos, y del manejo de interrupciones, que permite
+                que el sistema responda rápidamente a eventos externos, como señales de hardware o solicitudes de software. En resumen, 
+                el núcleo es fundamental para el funcionamiento eficiente y estable del sistema operativo.
+                </p>
+                <div style= "text-align: center;" >
+                    <img src="imagenes/nucleokernel.gif" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 100%; height: auto;">
+                </div> 
+
+                <li><h3><strong>Interfaz de Usuario</strong></h3></li>
+                <p>
+                Existen dos tipos principales de interfaz de usuario: la CLI (Command-Line Interface), que permite la interacción mediante 
+                comandos de texto escritos por el usuario, y la GUI (Graphical User Interface), que facilita la interacción mediante ventanas,
+                íconos y gráficos, ofreciendo una experiencia más visual e intuitiva. La CLI es más eficiente para usuarios avanzados que
+                prefieren el control total sobre el sistema, mientras que la GUI es más accesible para usuarios que buscan facilidad y 
+                comodidad en la interacción.
+                </p>
+                <div style= "text-align: center;" >
+                    <img src="imagenes/interfaz de ususario.png" alt="" style="box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.8); border-radius: 15px; max-width: 20%; height: auto;">
+                </div> 
+                <li><h3><strong>Sistema de Archivos</strong></h3></li>
+                <p>
+                El sistema de archivos es la estructura y el conjunto de reglas que un sistema operativo utiliza para almacenar, organizar 
+                y recuperar datos en dispositivos de almacenamiento, como discos duros o SSDs. Define cómo se gestionan los archivos, sus nombres, 
+                directorios, permisos y el acceso a los datos, asegurando que la información esté organizada de manera eficiente y sea fácilmente 
+                accesible cuando sea necesario.
+                </p>
+                </ul>  
+            </section>
+            
         </div>
     </main>
 
