@@ -97,7 +97,22 @@
             </section>
         </div>
     </main>
-
+    <section>
+        <div style="text-align: center;">
+             <h2>VIDEO EXPLICATIVO</h2>
+                <iframe 
+                text-aling="center"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/LNGlxvBfAZo"
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </div>
+               
+    </iframe>
+            </section>
     <footer>
         <div class="container.footer">
             <p>&copy; <?php echo date("Y"); ?> Mi Sitio Web. Todos los derechos reservados.</p>
